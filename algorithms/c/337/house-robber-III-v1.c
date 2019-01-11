@@ -18,8 +18,8 @@
 # define _D(...)    ((void)0)
 #endif
 
-#define TREE_DEPTH_MAX  (20)
-#define HOUSE_MAX       (1<<TREE_DEPTH_MAX)
+#define TREE_DEPTH_MAX  (19)
+#define HOUSE_MAX       ((1<<TREE_DEPTH_MAX)-1)
 
 struct TreeNode {
     int val;
