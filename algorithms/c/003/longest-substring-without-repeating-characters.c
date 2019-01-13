@@ -18,7 +18,7 @@
 # define _D(...)    ((void)0)
 #endif
 
-/* like the max sum of subsquence */
+/* like the max sum of subsequence */
 int LengthOfLongestSubstring(char *s)
 {
     if (!s) return 0;
