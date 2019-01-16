@@ -1,0 +1,8 @@
+mississippi mis*is*p*.
+aa          a*
+ab          .*
+aab         c*a*b
+aa          a
+abbb        a.b*..*.
+aaa         aa*
+abaeb        a.ab*c*d*.
