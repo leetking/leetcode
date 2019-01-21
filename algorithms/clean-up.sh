@@ -10,3 +10,7 @@ run() {
 for dotc in `find . -name '*.c'`; do
     run rm -f "${dotc%%.c}"
 done
+
+for dotcpp in `find . -name '*.cpp'`; do
+    run rm -f "${dotcpp%%.cpp}"
+done
