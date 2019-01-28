@@ -72,7 +72,7 @@ int main(int argc, char **argv)
     Solution s = Solution();
     int num;
 
-    while (1 == scanf("%d", &num)) {
+    while (cin >> num) {
         cout << s.intToRoman(num) << endl;
     }
 

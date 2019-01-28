@@ -11,6 +11,6 @@ for dotc in `find . -name '*.c'`; do
     run rm -f "${dotc%%.c}"
 done
 
-for dotcpp in `find . -name '*.cpp'`; do
-    run rm -f "${dotcpp%%.cpp}"
+for dotcpp in `find . -name '*.cc'`; do
+    run rm -f "${dotcpp%%.cc}"
 done
