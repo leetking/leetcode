@@ -2,15 +2,19 @@ dry=0
 
 run() {
     echo "$*"
-    if [ $dry -ne 1 ]; then
+    if [[ $dry == 0 ]]; then
         $*
     fi
 }
 
 for dotc in `find . -name '*.c'`; do
-    run rm -f "${dotc%%.c}"
+    if [[ -e "${dotc%%.c}" ]]; then
+        run rm -f "${dotc%%.c}"
+    fi
 done
 
 for dotcpp in `find . -name '*.cc'`; do
-    run rm -f "${dotcpp%%.cc}"
+    if [[ -e "${dotcpp%%.cc}" ]]; then
+        run rm -f "${dotcpp%%.cc}"
+    fi
 done
